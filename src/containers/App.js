@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import CardList from './CardList';
-import SearchBox from './SearchBox';
+import CardList from '../components/CardList';
+import SearchBox from '../components/SearchBox';
+import Scroll from '../components/Scroll';
 
 // to use state need to use Class method
 // const App = () => {
@@ -54,7 +55,9 @@ class App extends Component {
           <div className='tc'>
             <h1 className='f1'>RoboFriends</h1>
             <SearchBox searchChange={this.onSearchChange} />
-            <CardList robots={filteredRobots} />
+            <Scroll>
+              <CardList robots={filteredRobots} />
+            </Scroll>
           </div>
         </>
       );

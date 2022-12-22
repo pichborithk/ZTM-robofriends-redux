@@ -5,6 +5,7 @@ const SearchBox = ({ searchChange }) => {
     <>
       <div className='pa2'>
         <input
+          style={{ borderRadius: '20px' }}
           className='pa3 ba b--green bg-lightest-blue'
           type='search'
           placeholder='Search Robots'

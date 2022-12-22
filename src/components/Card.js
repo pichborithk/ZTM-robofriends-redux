@@ -28,7 +28,7 @@ const Card = ({ name, email, id }) => {
   //     const { name, email, id } = properties;
   return (
     <>
-      <div className='tc dib br4 pa3 ma2 grow bg-light-green bw3 shadow-5'>
+      <div className='tc dib br4 pa3 ma2 grow bg-light-red bw3 shadow-5'>
         <img
           src={`https://robohash.org/bgset_bg1/${id}?size=250x250`}
           alt='robotImage'
