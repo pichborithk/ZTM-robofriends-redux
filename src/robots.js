@@ -3,60 +3,114 @@ export const robots = [
     id: 1,
     name: 'Leanne Graham',
     username: 'Bret',
-    email: 'Sincere@april.biz'
+    email: 'Sincere@april.biz',
   },
   {
     id: 2,
     name: 'Ervin Howell',
     username: 'Antonette',
-    email: 'Shanna@melissa.tv'
+    email: 'Shanna@melissa.tv',
   },
   {
     id: 3,
     name: 'Clementine Bauch',
     username: 'Samantha',
-    email: 'Nathan@yesenia.net'
+    email: 'Nathan@yesenia.net',
   },
   {
     id: 4,
     name: 'Patricia Lebsack',
     username: 'Karianne',
-    email: 'Julianne.OConner@kory.org'
+    email: 'Julianne.OConner@kory.org',
   },
   {
     id: 5,
     name: 'Chelsey Dietrich',
     username: 'Kamren',
-    email: 'Lucio_Hettinger@annie.ca'
+    email: 'Lucio_Hettinger@annie.ca',
   },
   {
     id: 6,
     name: 'Mrs. Dennis Schulist',
     username: 'Leopoldo_Corkery',
-    email: 'Karley_Dach@jasper.info'
+    email: 'Karley_Dach@jasper.info',
   },
   {
     id: 7,
     name: 'Kurtis Weissnat',
     username: 'Elwyn.Skiles',
-    email: 'Telly.Hoeger@billy.biz'
+    email: 'Telly.Hoeger@billy.biz',
   },
   {
     id: 8,
     name: 'Nicholas Runolfsdottir V',
     username: 'Maxime_Nienow',
-    email: 'Sherwood@rosamond.me'
+    email: 'Sherwood@rosamond.me',
   },
   {
     id: 9,
     name: 'Glenna Reichert',
     username: 'Delphine',
-    email: 'Chaim_McDermott@dana.io'
+    email: 'Chaim_McDermott@dana.io',
   },
   {
     id: 10,
     name: 'Clementina DuBuque',
     username: 'Moriah.Stanton',
-    email: 'Rey.Padberg@karina.biz'
-  }
+    email: 'Rey.Padberg@karina.biz',
+  },
+  {
+    id: 11,
+    name: 'Chivon Pich',
+    username: 'chivon.pich',
+    email: '',
+    number: '+85586338485',
+    DOB: 'SEP-22-1988',
+    Job: 'Restaurant Owner',
+  },
+  {
+    id: 12,
+    name: 'Roathromonea Kimhean',
+    username: 'roathromonea.kimhean',
+    email: 'rromonea@gmail.com',
+    number: '+855883237777',
+    DOB: 'DEC-05-1986',
+    Job: 'General Manager',
+  },
+  {
+    id: 13,
+    name: 'Virak Uy',
+    username: 'virak.uy',
+    email: 'uyvirak999@gmail.com',
+    number: '+855972072292',
+    DOB: 'MAY-18-1993',
+    Job: 'Army Officer',
+  },
+  {
+    id: 14,
+    name: 'Sophannaara Y',
+    username: 'sophannara.y',
+    email: 'inara.phan@gmail.com',
+    number: '+855975108888',
+    DOB: 'DEC-22-1989',
+    Job: 'Businessman',
+  },
+  {
+    id: 15,
+    name: 'Samdy Ith',
+    username: 'samdy.ith',
+    email: 'samdyith09@gmail.com',
+    number: '+855978255888',
+    DOB: 'MAY-21-1985',
+    Job: 'Army Officer',
+  },
+  {
+    id: 16,
+    name: 'Khunreach Ouk',
+    username: 'khunreach.ouk',
+    email: 'khunreach762@gmail.com',
+    number: '+855326412222',
+    DOB: 'DEC-26-1994',
+    Job: 'Army Officer',
+  },
 ];
