@@ -18,8 +18,8 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     onSearchChange: (event) => dispatch(setSearchField(event.target.value)),
-    // onRequestRobots: () => requestRobots(dispatch), need change at actions.js to work
-    onRequestRobots: () => dispatch(requestRobots()),
+    onRequestRobots: () => requestRobots(dispatch),
+    // onRequestRobots: () => dispatch(requestRobots()),  need change at actions.js to work
   };
 };
 
