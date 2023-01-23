@@ -4,54 +4,47 @@ import './App.css';
 import CardList from '../components/CardList';
 import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll';
-import { setSearchField } from '../actions';
+import { requestRobots, setSearchField } from '../actions';
 
 const mapStateToProps = (state) => {
   return {
-    searchField: state.searchField,
+    searchField: state.searchRobots.searchField,
+    robots: state.requestRobots.robots,
+    isPending: state.requestRobots.isPending,
+    error: state.requestRobots.error,
   };
 };
 
 const mapDispatchToProps = (dispatch) => {
   return {
     onSearchChange: (event) => dispatch(setSearchField(event.target.value)),
+    // onRequestRobots: () => requestRobots(dispatch), need change at actions.js to work
+    onRequestRobots: () => dispatch(requestRobots()),
   };
 };
 
 class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      robots: [],
-    };
-  }
-
   componentDidMount() {
-    fetch('https://jsonplaceholder.typicode.com/users')
-      .then((response) => response.json())
-      .then((user) => this.setState({ robots: user }));
+    this.props.onRequestRobots();
   }
 
   render() {
-    const { robots } = this.state;
-    const { searchField, onSearchChange } = this.props;
+    const { searchField, onSearchChange, robots, isPending } = this.props;
     const filteredRobots = robots.filter((robot) =>
       robot.name.toLowerCase().includes(searchField.toLocaleLowerCase())
     );
-    return !robots.length ? ( //robots.length === 0
+    return isPending ? ( //robots.length === 0
       <>
         <p>Loading...</p>;
       </>
     ) : (
-      <>
-        <div className='tc'>
-          <h1 className='f1'>RoboFriends</h1>
-          <SearchBox searchChange={onSearchChange} />
-          <Scroll>
-            <CardList robots={filteredRobots} />
-          </Scroll>
-        </div>
-      </>
+      <div className='tc'>
+        <h1 className='f1'>RoboFriends</h1>
+        <SearchBox searchChange={onSearchChange} />
+        <Scroll>
+          <CardList robots={filteredRobots} />
+        </Scroll>
+      </div>
     );
   }
 }
